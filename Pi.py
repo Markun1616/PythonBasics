@@ -2,11 +2,11 @@ import math
 
 count = 0
 try:
-    digits = int(input("Enter number of Pi number digits: ")) - 1
+    digits = int(input("Enter number of Pi number digits: ")) + 1
 
-    if digits == -1:
+    if digits == + 1:
         print("Empty sequence!")
-    elif digits < -1:
+    elif digits < + 1:
         print("Impossible to generate negative sequence")
     else:
         try:
@@ -16,4 +16,4 @@ try:
         except IndexError:
             print("... To many digits")
 except ValueError:
-    print("Please, enter a number")
+    print("Please, enter a valid number")
